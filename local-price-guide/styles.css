@@ -239,7 +239,6 @@ body {
 .price-bar-segment {
     transition: width 0.3s ease;
 }
-
 .price-bar-segment.low { background: var(--low); }
 .price-bar-segment.mid { background: var(--mid); }
 .price-bar-segment.high { background: var(--high); }
