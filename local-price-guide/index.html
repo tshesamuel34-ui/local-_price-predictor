@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Price Guide — Avoid Price Exploitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">Local Price Guide</h1>
+            <p class="tagline">Know fair prices. Avoid exploitation.</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <p class="hero-text">Select a category and compare price ranges across markets so you always pay a fair local price.</p>
+        </section>
+
+        <section class="controls">
+            <div class="control-group">
+                <label for="category">Category</label>
+                <select id="category" aria-label="Select category">
+                    <option value="">— Choose a category —</option>
+                    <option value="food">Food & Restaurants</option>
+                    <option value="transport">Transport</option>
+                    <option value="accommodation">Accommodation</option>
+                    <option value="groceries">Groceries</option>
+                    <option value="services">Services (haircut, laundry, etc.)</option>
+                    <option value="drinks">Drinks & Beverages</option>
+                    <option value="souvenirs">Souvenirs & Shopping</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="item">Item / Service</label>
+                <select id="item" aria-label="Select item" disabled>
+                    <option value="">— Select category first —</option>
+                </select>
+            </div>
+            <button type="button" class="btn-analyze" id="analyzeBtn" disabled>Analyze prices</button>
+        </section>
+
+        <section class="results" id="results" hidden>
+            <h2 class="results-title" id="resultsTitle">Price analysis</h2>
+            <div class="price-summary" id="priceSummary"></div>
+            <div class="markets-grid" id="marketsGrid"></div>
+            <div class="price-bar-legend">
+                <span class="legend-item"><span class="legend-dot low"></span> Low (fair)</span>
+                <span class="legend-item"><span class="legend-dot mid"></span> Typical</span>
+                <span class="legend-item"><span class="legend-dot high"></span> High (possible overcharge)</span>
+            </div>
+            <div class="tips-card" id="tipsCard"></div>
+        </section>
+
+        <section class="empty-state" id="emptyState">
+            <div class="empty-icon" aria-hidden="true">📊</div>
+            <p>Pick a category and an item, then click <strong>Analyze prices</strong> to see price ranges from different markets.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Prices are indicative and vary by location and time. Use this as a guide to spot unfair pricing.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

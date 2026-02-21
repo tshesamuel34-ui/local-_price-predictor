@@ -1,0 +1,16 @@
+<!docty.html>
+<html lang"en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TSHEYNET<title>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <h1>Welcome to TSHEYNET</h1>
+        <p>This is a sample webpage for TSHEYNET.</p>
+        <textarea placeholder="Enter your text here..."></textarea>
+        <br>
+        <button Click Me </button>
+    </body>
+</html>
